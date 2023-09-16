@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
-    "@vite-pwa/nuxt",
+
     "@nuxtjs/supabase",
   ],
   supabase: {
