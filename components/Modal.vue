@@ -29,10 +29,11 @@
 import { useUserStore } from "~/stores/user";
 const userStore = useUserStore();
 const client = useSupabaseClient();
+const router = useRouter();
 
 const logout = () => {
   client.auth.signOut();
   userStore.isLogoutOverlay = false;
-  return navigateTo("/");
+  router.push("/");
 };
 </script>

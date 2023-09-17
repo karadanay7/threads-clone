@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   pages: true,
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   runtimeConfig: {
     public: {
       bucketUrl: process.env.BUCKET_URL,
@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
-
     "@nuxtjs/supabase",
   ],
   supabase: {
